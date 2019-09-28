@@ -1,0 +1,17 @@
+{
+    "source": "./src",
+    "destination": "./doc",
+    "includes": ["\\.(js|jsx)$"],
+    "package": "./package.json",
+    "plugins": [
+        {"name": "esdoc-standard-plugin"},
+        {"name": "esdoc-ecmascript-proposal-plugin", "option": {"all": true}},
+        {"name": "esdoc-jsx-plugin", "option": {"enable": true}},
+        {
+            "name": "esdoc-plugin-require-coverage",
+            "option": {
+                "required": 35
+            }
+        }
+    ]
+}
